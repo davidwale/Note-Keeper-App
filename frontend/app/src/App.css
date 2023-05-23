@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  position: relative;
+ 
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  background-color: #7EB2DD;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: 'Montagu Slab', serif;
+  font-weight: 200;
+  display: inline;
+}
+
+.logout {
+  padding-top: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "McLaren";
+  float: right;
+  font-size: 15px;
+}
+.content {
+  flex: 1;
+  padding-bottom: 100px; 
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+
+
+footer p {
+  color: #ccc;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.note {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 40px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #7EB2DD;
+  border: none;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #7EB2DD;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+  
+  header {
+    background-color: #7EB2DD;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logout {
+    float: right;
+  }
+  
+ 
+  
+  
+  
+  .note {
+   
+    margin: 10px;
+  }
+  
+  form.create-note {
+    width: 480px;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for mobile devices */
+  
+  header {
+    background-color: #7EB2DD;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  
+  .note {
+    
+    margin-bottom: 27px;
+  }
+  
+  form.create-note {
+    width: 330px;
+    margin: 10px auto;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  max-width: 400px;
+  padding: 20px;
+  margin-top: 200px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.form h1 {
+  text-align: center;
+  font-family: 'Montagu Slab', serif;
+margin-bottom: 10px;
+color: #7EB2DD;
+}
+
+.form p {
+  font-family: 'Montserrat', sans-serif;}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.login-user,
+.login-pass,
+.login-secret,
+.sign-f,
+.sign-l {
+  width: 90%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #7EB2DD;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+
+}
+
+.forgot-password {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
